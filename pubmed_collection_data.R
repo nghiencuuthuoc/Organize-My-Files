@@ -25,9 +25,9 @@ class(records)
 pubmed_data <- data.frame('Title'=ArticleTitle(records),'Abstract'=AbstractText(records))
 head(pubmed_data,1)
 # Write txt in R
-write.table(pubmed_data, file='pubmed_drug_delivery.txt')
+write.table(pubmed_data, file='pubmed_collection_data.txt')
 # Write CSV in R
-write.csv(pubmed_data, file = "pubmed_drug_delivery.csv")
+write.csv(pubmed_data, file = "pubmed_collection_data.csv")
 
 # First, automagically install needed library xlsx for save file to xlsx:
 # list.of.packages <- c("rJava", "xlsx")
@@ -45,6 +45,6 @@ pubmed_data$Abstract <- gsub(",", " ", pubmed_data$Abstract, fixed = TRUE)
 str(pubmed_data)
 
 # Write txt in R
-write.table(pubmed_data, file='pubmed_drug_delivery_1.txt')
+write.table(pubmed_data, file='pubmed_collection_data_1.txt')
 # Write CSV in R
-write.csv(pubmed_data, file='pubmed_drug_delivery_1.csv')
+write.csv(pubmed_data, file='pubmed_collection_data_1.csv')
