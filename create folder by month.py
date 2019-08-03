@@ -1,0 +1,13 @@
+import os	
+os.mkdir("January")
+os.mkdir("February")
+os.mkdir("March")
+os.mkdir("April")
+os.mkdir("May")
+os.mkdir("June")
+os.mkdir("July")
+os.mkdir("August")
+os.mkdir("September")
+os.mkdir("October")
+os.mkdir("November")
+os.mkdir("December")
